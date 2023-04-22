@@ -1,0 +1,62 @@
+
+<div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status" *ngIf="loader">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+
+
+
+<div class="container-fluid" *ngIf="!loader">
+<p>
+  
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+   
+<nav>
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home"> HOME </a>&nbsp;
+ 
+  
+    <a class="navbar-brand" routerLink="contact"> CONTACT </a>&nbsp;
+ 
+  
+    <a class="navbar-brand"  routerLink="about"> ABOUT US </a>&nbsp;
+ 
+    <a class="navbar-brand" routerLink="login"> LOGIN </a>&nbsp;
+    <a class="navbar-brand" routerLink="register"> REGISTER </a>&nbsp;
+  
+  <a mat-raised-button href="https://www.nrtec.in/" target="_blank" >Link</a>
+
+  
+  
+  </div>
+</nav>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+
+
+
+
+
+
+
+</mat-toolbar>
+
+<br>
+
+
+</div>
+ 
+<router-outlet>
+
+
+</router-outlet>
